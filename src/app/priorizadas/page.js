@@ -25,7 +25,6 @@ export default function PaginaPriorizadas() {
   );
 }
 
-
 const estiloItemTarefa = {
   display: 'flex',
   alignItems: 'center',
