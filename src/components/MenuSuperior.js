@@ -7,24 +7,35 @@ export default function MenuSuperior() {
       backgroundColor: '#333',
       padding: '1rem',
       display: 'flex',
-      justifyContent: 'center',
+      // Altere esta linha para alinhar os itens à direita
+      justifyContent: 'flex-end', // <-- ANTES ERA 'center'
       gap: '20px'
     }}>
-      <Link href="/" style={linkStyle}>
+      <Link href="/" style={btCaixaEntrada}>
         Caixa de Entrada
       </Link>
-      <Link href="/priorizadas" style={linkStyle}>
+      <Link href="/priorizadas" style={btPriorizadas}>
         Priorizadas
       </Link>
     </nav>
   );
 }
 
-const linkStyle = {
+const btCaixaEntrada = {
   color: 'white',
   textDecoration: 'none',
   padding: '10px 15px',
   backgroundColor: '#54575aff',
+  borderRadius: '5px',
+  fontFamily: 'sans-serif',
+  fontWeight: 'bold'
+};
+
+const btPriorizadas = {
+  color: 'white',
+  textDecoration: 'none',
+  padding: '10px 15px',
+  backgroundColor: '#b9c239ff',
   borderRadius: '5px',
   fontFamily: 'sans-serif',
   fontWeight: 'bold'
